@@ -1,6 +1,6 @@
 #/bin/bash
 
-echo "This short script will help you instlal Autodesk Fusion 360 on your Arch based Linux distribution"
+echo "This short script will help you install Autodesk Fusion 360 on your Arch based Linux distribution"
 echo "Author: Dylan Dean Goebel"
 echo "Contact: goebeld @ https://www.reddit.com/user/goebeld"
 
