@@ -64,6 +64,7 @@ echo "Contact: goebeld @ https://www.reddit.com/user/goebeld"
 	echo "The executable for Fusion360 has been placed in $INSTALLDIR named fusion360. You can move this to somethere in your PATH for auto tab completion or just launch it from this directory"
 	echo "If you are having trouble with this app launcher, just open launcher file with a text editor ;)"
 	echo 
+	echo "The first launch of the application is usually laggy when signing in, just be patient and it will work!"
 	echo "Quirk: Sometimes the Fusion 360 logo gets stuck in the work area after launching. To fix this, set your Graphics mode to OpenGL and restart"
 	echo 
 	echo	
