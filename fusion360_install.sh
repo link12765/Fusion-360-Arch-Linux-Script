@@ -52,6 +52,7 @@ echo "Contact: goebeld @ https://www.reddit.com/user/goebeld"
 	cd $INSTALLDIR/tmp/
 	sed -i 's/winver._platform_version or //' setup/platform.py	
 	WINEPREFIX=$INSTALLDIR wine setup/streamer.exe -p deploy -g -f log.txt --quiet
+        rm -r $INSTALLDIR/tmp/
 
 #Create Fusion 360 launching script
 	echo "env WINEPREFIX='$INSTALLDIR' wine C:\\windows\\command\\start.exe /Unix /$HOME/.fusion360/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Autodesk/Autodesk\ Fusion\ 360.lnk" > $INSTALLDIR/fusion360
