@@ -46,6 +46,7 @@ echo "Contact: goebeld @ https://www.reddit.com/user/goebeld"
 	WINEPREFIX=$INSTALLDIR ./setup_dxvk.sh install
 
 #Install Fusion 360
+	echo "NOW INSTALLING FUSION 360!!!"
 	wget -P $INSTALLDIR/tmp https://dl.appstreaming.autodesk.com/production/installers/Fusion%20360%20Admin%20Install.exe
 	7z x -o$INSTALLDIR/tmp/setup/ "$INSTALLDIR/tmp/Fusion 360 Admin Install.exe"
 	curl -Lo $INSTALLDIR/tmp/setup/platform.py https://github.com/python/cpython/raw/3.5/Lib/platform.py
