@@ -56,9 +56,7 @@ echo "Contact: goebeld @ https://www.reddit.com/user/goebeld"
         rm -r $INSTALLDIR/tmp/
 
 #Create Fusion 360 launching script
-	echo "env WINEPREFIX='$INSTALLDIR' wine C:\\windows\\command\\start.exe /Unix /$HOME/.fusion360/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Autodesk/Autodesk\ Fusion\ 360.lnk" > $INSTALLDIR/fusion360
-	echo "#Sometimes the first command doesn't work and you need to launch it with this one:" >> $INSTALLDIR/fusion360
-	echo "#env WINEPREFIX='$INSTALLDIR' wine '$INSTALLDIR/drive_c/Program Files/Autodesk/webdeploy/production/6a0c9611291d45bb9226980209917c3d/FusionLauncher.exe'" >> $INSTALLDIR/fusion360
+	echo "#env WINEPREFIX='$INSTALLDIR' fusion_idsdk=false wine '$INSTALLDIR/drive_c/Program Files/Autodesk/webdeploy/production/6a0c9611291d45bb9226980209917c3d/FusionLauncher.exe'" >> $INSTALLDIR/fusion360
 	chmod a+x $INSTALLDIR/fusion360
 	echo
 	echo
